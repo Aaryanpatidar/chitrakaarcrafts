@@ -10,16 +10,18 @@ const app = express();
 // Middleware
 const allowedOrigins = [
   "http://localhost:5173",
-  process.env.CLIENT_URL
-].filter(Boolean);
+  "https://chitrakaarcrafts1.netlify.app"
+];
 
 app.use(cors({
-  origin: function(origin, callback) {
+  origin: function (origin, callback) {
+    console.log("Request Origin:", origin);
+
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
-      console.error("Blocked by CORS:", origin);
-      callback(new Error("Not allowed by CORS"));
+      console.log("❌ Blocked by CORS:", origin);
+      callback(null, false); // IMPORTANT: do NOT throw error
     }
   },
   credentials: true
