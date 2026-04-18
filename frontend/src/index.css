@@ -2,22 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-  --cream: #faf6f0;
-  --warm-white: #fff8f0;
-  --terracotta: #c4613a;
-  --terracotta-dark: #a04e2e;
-  --terracotta-light: #e8856a;
-  --ochre: #d4a017;
+  --cream: #ffffff;
+  --warm-white: #ffffff;
+  --terracotta: #4A2E4A;
+  --terracotta-dark: #4A2E4A;
+  --terracotta-light: #4A2E4A;
+  --ochre: #FADCF2;
   --deep-brown: #2c1a0e;
-  --medium-brown: #5c3d2e;
-  --light-brown: #8b6452;
+  --medium-brown: #110701;
+  --light-brown: #4A2E4A;
   --sage: #7a8c6e;
-  --sand: #e8d5b7;
-  --sand-dark: #d4bc96;
+  --sand: #FADCF2;
+  --sand-dark: #FADCF2;
   --text-primary: #2c1a0e;
-  --text-secondary: #5c3d2e;
-  --text-muted: #9b8070;
-  --border: #e0cdb8;
+  --text-secondary: #4A2E4A;
+  --text-muted: #2c1a0e;
+  --border: #4A2E4A;
   --shadow-sm: 0 2px 8px rgba(44, 26, 14, 0.08);
   --shadow-md: 0 4px 20px rgba(44, 26, 14, 0.12);
   --shadow-lg: 0 8px 40px rgba(44, 26, 14, 0.16);

@@ -21,7 +21,11 @@ export default function Navbar() {
       <div style={styles.inner}>
         {/* Logo */}
         <Link to="/" style={styles.logo}>
-          <span style={styles.logoIcon}>🎨</span>
+          <img
+            src="https://res.cloudinary.com/dkpy45wnx/image/upload/q_auto/f_auto/v1776450667/CCImage_kfttsv.jpg"
+            alt="ChitraKaar Crafts Logo"
+            style={styles.logoImage}
+          />
           <span>
             <span style={styles.logoMain}>ChitraKaar</span>
             <span style={styles.logoCrafts}> Crafts</span>
@@ -69,7 +73,7 @@ export default function Navbar() {
                       ⚙️ Admin Panel
                     </Link>
                   )}
-                  <hr style={{ border: "none", borderTop: "1px solid #e0cdb8", margin: "0.25rem 0" }} />
+                  <hr style={{ border: "none", borderTop: "1px solid #F5EFF4", margin: "0.25rem 0" }} />
                   <button style={{ ...styles.dropItem, width: "100%", textAlign: "left", background: "none", border: "none", cursor: "pointer", color: "#dc2626" }} onClick={handleLogout}>
                     🚪 Logout
                   </button>
@@ -114,26 +118,26 @@ export default function Navbar() {
 }
 
 const styles = {
-  header: { background: "white", borderBottom: "1px solid #e0cdb8", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 2px 8px rgba(44,26,14,0.06)" },
+  header: { background: "#F5EFF4", borderBottom: "1px solid #e0cdb8", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 2px 8px rgba(44,26,14,0.06)" },
   inner: { maxWidth: 1280, margin: "0 auto", padding: "0 1.5rem", height: 68, display: "flex", alignItems: "center", gap: "1.5rem" },
   logo: { display: "flex", alignItems: "center", gap: "0.5rem", flexShrink: 0 },
-  logoIcon: { fontSize: "1.5rem" },
+  logoImage: { width: "40px", height: "40px", objectFit: "cover", marginRight: "8px", borderRadius: "50%", border: "1.8px solid black"},
   logoMain: { fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", fontWeight: 700, color: "#2c1a0e" },
-  logoCrafts: { fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", color: "#c4613a" },
+  logoCrafts: { fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", color: "#B57BB5" },
   nav: { display: "flex", gap: "0.25rem", flex: 1 },
-  navLink: { padding: "0.4rem 0.85rem", borderRadius: 6, fontSize: "0.9rem", color: "#5c3d2e", fontWeight: 500, transition: "all 0.2s" },
-  navLinkActive: { background: "#fdf0ea", color: "#c4613a" },
+  navLink: { padding: "0.4rem 0.85rem", borderRadius: 6, fontSize: "0.9rem", color: "#4A2E4A", fontWeight: 500, transition: "all 0.2s" },
+  navLinkActive: { background: "white", color: "#B57BB5" },
   actions: { display: "flex", alignItems: "center", gap: "0.75rem" },
   cartBtn: { position: "relative", fontSize: "1.3rem", padding: "0.3rem", display: "flex", alignItems: "center" },
-  cartBadge: { position: "absolute", top: -4, right: -4, background: "#c4613a", color: "white", borderRadius: "50%", width: 18, height: 18, fontSize: "0.65rem", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700 },
-  userBtn: { display: "flex", alignItems: "center", gap: "0.5rem", background: "#faf6f0", border: "1px solid #e0cdb8", borderRadius: 8, padding: "0.4rem 0.85rem", cursor: "pointer", fontSize: "0.88rem", color: "#2c1a0e" },
-  avatar: { width: 28, height: 28, background: "#c4613a", color: "white", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "0.85rem" },
+  cartBadge: { position: "absolute", top: -4, right: -4, background: "#B57BB5", color: "white", borderRadius: "50%", width: 18, height: 18, fontSize: "0.65rem", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700 },
+  userBtn: { display: "flex", alignItems: "center", gap: "0.5rem", background: "#faf6f0", border: "1px solid #B57BB5", borderRadius: 8, padding: "0.4rem 0.85rem", cursor: "pointer", fontSize: "0.88rem", color: "#2c1a0e" },
+  avatar: { width: 28, height: 28, background: "#B57BB5", color: "white", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "0.85rem" },
   userName: { fontWeight: 500 },
-  dropdown: { position: "absolute", top: "110%", right: 0, background: "white", border: "1px solid #e0cdb8", borderRadius: 10, boxShadow: "0 8px 24px rgba(44,26,14,0.12)", minWidth: 180, zIndex: 200, padding: "0.4rem 0" },
+  dropdown: { position: "absolute", top: "110%", right: 0, background: "white", border: "1px solid #B57BB5", borderRadius: 10, boxShadow: "0 8px 24px rgba(44,26,14,0.12)", minWidth: 180, zIndex: 200, padding: "0.4rem 0" },
   dropItem: { display: "block", padding: "0.6rem 1.1rem", fontSize: "0.88rem", color: "#2c1a0e", transition: "background 0.15s" },
   authBtns: { display: "flex", gap: "0.5rem" },
-  loginBtn: { padding: "0.45rem 1rem", fontSize: "0.88rem", color: "#c4613a", border: "1.5px solid #c4613a", borderRadius: 7, fontWeight: 500 },
-  signupBtn: { padding: "0.45rem 1rem", fontSize: "0.88rem", background: "#c4613a", color: "white", borderRadius: 7, fontWeight: 500 },
+  loginBtn: { padding: "0.45rem 1rem", fontSize: "0.88rem", color: "#B57BB5", border: "1.5px solid #B57BB5", borderRadius: 7, fontWeight: 500 },
+  signupBtn: { padding: "0.45rem 1rem", fontSize: "0.88rem", background: "#B57BB5", color: "white", borderRadius: 7, fontWeight: 500 },
   hamburger: { display: "none", background: "none", fontSize: "1.3rem", color: "#2c1a0e" },
   mobileMenu: { background: "white", borderTop: "1px solid #e0cdb8", padding: "0.75rem 1.5rem", display: "flex", flexDirection: "column" },
   mobileLink: { padding: "0.75rem 0", fontSize: "0.95rem", color: "#2c1a0e", borderBottom: "1px solid #f0e8de", fontWeight: 500, display: "block" },

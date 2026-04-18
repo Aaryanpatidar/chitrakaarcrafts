@@ -4,7 +4,7 @@ import api from "../utils/api";
 import { useCart } from "../context/CartContext";
 import toast from "react-hot-toast";
 
-const PLACEHOLDER = "https://placehold.co/600x450/e8d5b7/5c3d2e?text=Art";
+const PLACEHOLDER = "https://placehold.co/600x450/FADCF2/4A2E4A?text=Art";
 
 export default function ProductDetail() {
   const { id } = useParams();

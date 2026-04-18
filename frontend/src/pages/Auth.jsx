@@ -16,7 +16,7 @@ export function Login() {
     setError("");
     const result = await login(form.email, form.password);
     if (result.success) {
-      toast.success("Welcome back! 🎨");
+      toast.success("Welcome back!");
       navigate(redirect);
     } else {
       setError(result.message);
@@ -26,7 +26,11 @@ export function Login() {
   return (
     <div style={authStyles.page}>
       <div style={authStyles.card}>
-        <div style={authStyles.logo}>🎨</div>
+        <img
+            src="https://res.cloudinary.com/dkpy45wnx/image/upload/q_auto/f_auto/v1776450667/CCImage_kfttsv.jpg"
+            alt="ChitraKaar Crafts Logo"
+            style={authStyles.logoImage}
+        />
         <h1 style={authStyles.title}>Welcome Back</h1>
         <p style={authStyles.sub}>Sign in to your ChitraKaar account</p>
 
@@ -81,7 +85,11 @@ export function Signup() {
   return (
     <div style={authStyles.page}>
       <div style={authStyles.card}>
-        <div style={authStyles.logo}>🎨</div>
+        <img
+            src="https://res.cloudinary.com/dkpy45wnx/image/upload/q_auto/f_auto/v1776450667/CCImage_kfttsv.jpg"
+            alt="ChitraKaar Crafts Logo"
+            style={authStyles.logoImage}
+        />
         <h1 style={authStyles.title}>Create Account</h1>
         <p style={authStyles.sub}>Join the ChitraKaar community</p>
 
@@ -124,9 +132,10 @@ export function Signup() {
 
 const authStyles = {
   page: { minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "linear-gradient(135deg, #faf6f0 0%, #f0e4d4 100%)", padding: "2rem 1rem" },
-  card: { background: "white", borderRadius: 20, padding: "2.5rem", width: "100%", maxWidth: 440, boxShadow: "0 8px 40px rgba(44,26,14,0.12)", border: "1px solid var(--border)" },
+  card: { background: "white", borderRadius: 20, padding: "2.1rem", width: "100%", maxWidth: 440, boxShadow: "0 8px 40px rgba(44,26,14,0.12)", border: "1px solid var(--border)" },
   logo: { fontSize: "2.5rem", textAlign: "center", marginBottom: "0.5rem" },
-  title: { fontFamily: "'Playfair Display', serif", fontSize: "1.75rem", textAlign: "center", marginBottom: "0.4rem" },
+  logoImage: { width: "54px", height: "54px", objectFit: "cover", borderRadius: "50%", border: "1.8px solid black", display: "block", margin: "0 auto"},
+  title: { fontFamily: "'Playfair Display', serif", fontSize: "1.75rem", textAlign: "center", marginBottom: "0.4rem", marginTop: "0.3rem" },
   sub: { color: "var(--text-muted)", textAlign: "center", fontSize: "0.9rem", marginBottom: "1.75rem" },
   footer: { textAlign: "center", marginTop: "1.5rem", fontSize: "0.88rem", color: "var(--text-muted)" },
 };
