@@ -6,7 +6,11 @@ export default function Footer() {
     <footer style={styles.footer}>
       <div style={styles.inner}>
         <div style={styles.brand}>
-          <span style={styles.logo}>🎨 ChitraKaar Crafts</span>
+          <span style={styles.logo}><img
+            src="https://res.cloudinary.com/dkpy45wnx/image/upload/q_auto/f_auto/v1776450667/CCImage_kfttsv.jpg"
+            alt="ChitraKaar Crafts Logo"
+            style={styles.logoImage}
+          /> ChitraKaar Crafts</span>
           <p style={styles.tagline}>Handcrafted art, straight from Indian artisans to your doorstep.</p>
         </div>
         <div style={styles.links}>
@@ -33,6 +37,7 @@ const styles = {
   footer: { background: "#4A2E4A", color: "#F5EFF4", marginTop: "auto" },
   inner: { maxWidth: 1280, margin: "0 auto", padding: "3rem 1.5rem 2rem", display: "grid", gridTemplateColumns: "2fr 1fr 1fr", gap: "2rem" },
   brand: {},
+  logoImage: { width: "40px", height: "40px", objectFit: "cover", marginRight: "8px", borderRadius: "50%", border: "1.8px solid black"},
   logo: { fontFamily: "'Playfair Display', serif", fontSize: "1.2rem", color: "white", display: "block", marginBottom: "0.75rem" },
   tagline: { fontSize: "0.88rem", color: "#F5EFF4", lineHeight: 1.6, maxWidth: 280 },
   links: { display: "flex", flexDirection: "column", gap: "0.5rem" },
