@@ -104,7 +104,6 @@ export default function Home() {
               { icon: "🏺", title: "Authentic Craft", desc: "Every piece is handmade by skilled artisans across India." },
               { icon: "🚚", title: "Safe Delivery", desc: "Carefully packed and delivered to your doorstep." },
               { icon: "💰", title: "Fair Prices", desc: "Direct from artist — no middlemen, honest pricing." },
-              { icon: "↩️", title: "Easy Returns", desc: "Not happy? Return within 7 days, no questions asked." },
             ].map((f) => (
               <div key={f.title} style={whyStyles.card}>
                 <span style={whyStyles.icon}>{f.icon}</span>

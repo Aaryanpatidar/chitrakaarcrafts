@@ -38,7 +38,7 @@ const styles = {
   inner: { maxWidth: 1280, margin: "0 auto", padding: "3rem 1.5rem 2rem", display: "grid", gridTemplateColumns: "2fr 1fr 1fr", gap: "2rem" },
   brand: {},
   logoImage: { width: "40px", height: "40px", objectFit: "cover", marginRight: "8px", borderRadius: "50%", border: "1.8px solid black"},
-  logo: { fontFamily: "'Playfair Display', serif", fontSize: "1.2rem", color: "white", display: "block", marginBottom: "0.75rem" },
+  logo: { fontFamily: "'Playfair Display', serif", fontSize: "1.2rem", color: "white", display: "flex", marginBottom: "0.75rem", paddingTop: "0.25" },
   tagline: { fontSize: "0.88rem", color: "#F5EFF4", lineHeight: 1.6, maxWidth: 280 },
   links: { display: "flex", flexDirection: "column", gap: "0.5rem" },
   col: { color: "#4A2E4A", fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "0.25rem" },
