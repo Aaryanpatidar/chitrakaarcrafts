@@ -10,7 +10,9 @@ const app = express();
 // Middleware
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://chitrakaarcrafts1.netlify.app"
+  "https://chitrakaarcrafts1.netlify.app",
+  "https://chitrakaarcrafts.shop",          
+  "https://www.chitrakaarcrafts.shop"
 ];
 
 app.use(cors({
